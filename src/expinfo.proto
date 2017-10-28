@@ -1,0 +1,16 @@
+package DarwinAccelerator;
+
+message ExpParam
+{
+  optional bytes skey = 1;
+  optional bytes sval = 2;
+}
+
+message ExpLayerInfo
+{
+  optional uint32 exp_layer   = 1;              //层
+  optional uint32 exp_id      = 2[default=0];   //实验id,基线实验为0
+  repeated ExpParam exp_param = 3;              //本层实验参数信息，基线实验带默认参数，具体实验会替换默认参数
+}
+
+option optimize_for = LITE_RUNTIME;
