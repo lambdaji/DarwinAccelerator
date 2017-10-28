@@ -1,16 +1,31 @@
+syntax = "proto2";
 package DarwinAccelerator;
 
-message ExpParam
+message ReqInfo
 {
-  optional bytes skey = 1;
-  optional bytes sval = 2;
+  optional uint32   pos_id    = 1;  //业务ID
+  optional bytes    sguid     = 2;
+  optional uint32   layers    = 3;             //需要多少层
+  optional uint32   orth      = 4[default=1];  //是否正交 1-是 0-否
+  optional uint32   shuffle   = 5[default=1];  //是否洗牌 1-是 0-否
 }
 
-message ExpLayerInfo
+message RspInfo
 {
-  optional uint32 exp_layer   = 1;              //层
-  optional uint32 exp_id      = 2[default=0];   //实验id,基线实验为0
-  repeated ExpParam exp_param = 3;              //本层实验参数信息，基线实验带默认参数，具体实验会替换默认参数
+  message ExpParam
+  {
+    optional bytes skey = 1;
+    optional bytes sval = 2;
+  }
+
+  message ExpLayerInfo
+  {
+    optional uint32 exp_layer     = 1;              //层
+    optional uint32 exp_id        = 2[default=0];   //实验id,基线实验为0
+    repeated ExpParam exp_param   = 3;              //本层实验参数信息，基线实验带默认参数，具体实验会替换默认参数
+  }
+
+  repeated ExpLayerInfo exp_info  = 1;              //允许批量请求
 }
 
 option optimize_for = LITE_RUNTIME;
