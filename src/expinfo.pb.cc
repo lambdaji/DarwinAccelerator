@@ -16,7 +16,7 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
-namespace DarwinAccelerator {
+namespace DarwinProto {
 class ReqInfoDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<ReqInfo>
@@ -37,7 +37,7 @@ class RspInfoDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<RspInfo>
       _instance;
 } _RspInfo_default_instance_;
-}  // namespace DarwinAccelerator
+}  // namespace DarwinProto
 namespace protobuf_expinfo_2eproto {
 void InitDefaultsReqInfoImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -48,11 +48,11 @@ void InitDefaultsReqInfoImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::DarwinAccelerator::_ReqInfo_default_instance_;
-    new (ptr) ::DarwinAccelerator::ReqInfo();
+    void* ptr = &::DarwinProto::_ReqInfo_default_instance_;
+    new (ptr) ::DarwinProto::ReqInfo();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::DarwinAccelerator::ReqInfo::InitAsDefaultInstance();
+  ::DarwinProto::ReqInfo::InitAsDefaultInstance();
 }
 
 void InitDefaultsReqInfo() {
@@ -69,11 +69,11 @@ void InitDefaultsRspInfo_ExpParamImpl() {
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
-    void* ptr = &::DarwinAccelerator::_RspInfo_ExpParam_default_instance_;
-    new (ptr) ::DarwinAccelerator::RspInfo_ExpParam();
+    void* ptr = &::DarwinProto::_RspInfo_ExpParam_default_instance_;
+    new (ptr) ::DarwinProto::RspInfo_ExpParam();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::DarwinAccelerator::RspInfo_ExpParam::InitAsDefaultInstance();
+  ::DarwinProto::RspInfo_ExpParam::InitAsDefaultInstance();
 }
 
 void InitDefaultsRspInfo_ExpParam() {
@@ -91,11 +91,11 @@ void InitDefaultsRspInfo_ExpLayerInfoImpl() {
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   protobuf_expinfo_2eproto::InitDefaultsRspInfo_ExpParam();
   {
-    void* ptr = &::DarwinAccelerator::_RspInfo_ExpLayerInfo_default_instance_;
-    new (ptr) ::DarwinAccelerator::RspInfo_ExpLayerInfo();
+    void* ptr = &::DarwinProto::_RspInfo_ExpLayerInfo_default_instance_;
+    new (ptr) ::DarwinProto::RspInfo_ExpLayerInfo();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::DarwinAccelerator::RspInfo_ExpLayerInfo::InitAsDefaultInstance();
+  ::DarwinProto::RspInfo_ExpLayerInfo::InitAsDefaultInstance();
 }
 
 void InitDefaultsRspInfo_ExpLayerInfo() {
@@ -113,11 +113,11 @@ void InitDefaultsRspInfoImpl() {
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   protobuf_expinfo_2eproto::InitDefaultsRspInfo_ExpLayerInfo();
   {
-    void* ptr = &::DarwinAccelerator::_RspInfo_default_instance_;
-    new (ptr) ::DarwinAccelerator::RspInfo();
+    void* ptr = &::DarwinProto::_RspInfo_default_instance_;
+    new (ptr) ::DarwinProto::RspInfo();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::DarwinAccelerator::RspInfo::InitAsDefaultInstance();
+  ::DarwinProto::RspInfo::InitAsDefaultInstance();
 }
 
 void InitDefaultsRspInfo() {
@@ -126,7 +126,7 @@ void InitDefaultsRspInfo() {
 }
 
 }  // namespace protobuf_expinfo_2eproto
-namespace DarwinAccelerator {
+namespace DarwinProto {
 
 // ===================================================================
 
@@ -146,7 +146,7 @@ ReqInfo::ReqInfo()
     ::protobuf_expinfo_2eproto::InitDefaultsReqInfo();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(constructor:DarwinProto.ReqInfo)
 }
 ReqInfo::ReqInfo(const ReqInfo& from)
   : ::google::protobuf::MessageLite(),
@@ -161,7 +161,7 @@ ReqInfo::ReqInfo(const ReqInfo& from)
   ::memcpy(&pos_id_, &from.pos_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&shuffle_) -
     reinterpret_cast<char*>(&pos_id_)) + sizeof(shuffle_));
-  // @@protoc_insertion_point(copy_constructor:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(copy_constructor:DarwinProto.ReqInfo)
 }
 
 void ReqInfo::SharedCtor() {
@@ -175,7 +175,7 @@ void ReqInfo::SharedCtor() {
 }
 
 ReqInfo::~ReqInfo() {
-  // @@protoc_insertion_point(destructor:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(destructor:DarwinProto.ReqInfo)
   SharedDtor();
 }
 
@@ -202,7 +202,7 @@ ReqInfo* ReqInfo::New(::google::protobuf::Arena* arena) const {
 }
 
 void ReqInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:DarwinAccelerator.ReqInfo)
+// @@protoc_insertion_point(message_clear_start:DarwinProto.ReqInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -233,7 +233,7 @@ bool ReqInfo::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(parse_start:DarwinProto.ReqInfo)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -319,17 +319,17 @@ bool ReqInfo::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(parse_success:DarwinProto.ReqInfo)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(parse_failure:DarwinProto.ReqInfo)
   return false;
 #undef DO_
 }
 
 void ReqInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(serialize_start:DarwinProto.ReqInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -362,11 +362,11 @@ void ReqInfo::SerializeWithCachedSizes(
 
   output->WriteRaw(_internal_metadata_.unknown_fields().data(),
                    static_cast<int>(_internal_metadata_.unknown_fields().size()));
-  // @@protoc_insertion_point(serialize_end:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(serialize_end:DarwinProto.ReqInfo)
 }
 
 size_t ReqInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DarwinAccelerator.ReqInfo)
+// @@protoc_insertion_point(message_byte_size_start:DarwinProto.ReqInfo)
   size_t total_size = 0;
 
   total_size += _internal_metadata_.unknown_fields().size();
@@ -421,7 +421,7 @@ void ReqInfo::CheckTypeAndMergeFrom(
 }
 
 void ReqInfo::MergeFrom(const ReqInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DarwinAccelerator.ReqInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:DarwinProto.ReqInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -450,7 +450,7 @@ void ReqInfo::MergeFrom(const ReqInfo& from) {
 }
 
 void ReqInfo::CopyFrom(const ReqInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DarwinAccelerator.ReqInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:DarwinProto.ReqInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -477,7 +477,7 @@ void ReqInfo::InternalSwap(ReqInfo* other) {
 }
 
 ::std::string ReqInfo::GetTypeName() const {
-  return "DarwinAccelerator.ReqInfo";
+  return "DarwinProto.ReqInfo";
 }
 
 
@@ -496,7 +496,7 @@ RspInfo_ExpParam::RspInfo_ExpParam()
     ::protobuf_expinfo_2eproto::InitDefaultsRspInfo_ExpParam();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(constructor:DarwinProto.RspInfo.ExpParam)
 }
 RspInfo_ExpParam::RspInfo_ExpParam(const RspInfo_ExpParam& from)
   : ::google::protobuf::MessageLite(),
@@ -512,7 +512,7 @@ RspInfo_ExpParam::RspInfo_ExpParam(const RspInfo_ExpParam& from)
   if (from.has_sval()) {
     sval_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sval_);
   }
-  // @@protoc_insertion_point(copy_constructor:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(copy_constructor:DarwinProto.RspInfo.ExpParam)
 }
 
 void RspInfo_ExpParam::SharedCtor() {
@@ -522,7 +522,7 @@ void RspInfo_ExpParam::SharedCtor() {
 }
 
 RspInfo_ExpParam::~RspInfo_ExpParam() {
-  // @@protoc_insertion_point(destructor:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(destructor:DarwinProto.RspInfo.ExpParam)
   SharedDtor();
 }
 
@@ -550,7 +550,7 @@ RspInfo_ExpParam* RspInfo_ExpParam::New(::google::protobuf::Arena* arena) const 
 }
 
 void RspInfo_ExpParam::Clear() {
-// @@protoc_insertion_point(message_clear_start:DarwinAccelerator.RspInfo.ExpParam)
+// @@protoc_insertion_point(message_clear_start:DarwinProto.RspInfo.ExpParam)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -580,7 +580,7 @@ bool RspInfo_ExpParam::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(parse_start:DarwinProto.RspInfo.ExpParam)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -622,17 +622,17 @@ bool RspInfo_ExpParam::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(parse_success:DarwinProto.RspInfo.ExpParam)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(parse_failure:DarwinProto.RspInfo.ExpParam)
   return false;
 #undef DO_
 }
 
 void RspInfo_ExpParam::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(serialize_start:DarwinProto.RspInfo.ExpParam)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -651,11 +651,11 @@ void RspInfo_ExpParam::SerializeWithCachedSizes(
 
   output->WriteRaw(_internal_metadata_.unknown_fields().data(),
                    static_cast<int>(_internal_metadata_.unknown_fields().size()));
-  // @@protoc_insertion_point(serialize_end:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(serialize_end:DarwinProto.RspInfo.ExpParam)
 }
 
 size_t RspInfo_ExpParam::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DarwinAccelerator.RspInfo.ExpParam)
+// @@protoc_insertion_point(message_byte_size_start:DarwinProto.RspInfo.ExpParam)
   size_t total_size = 0;
 
   total_size += _internal_metadata_.unknown_fields().size();
@@ -689,7 +689,7 @@ void RspInfo_ExpParam::CheckTypeAndMergeFrom(
 }
 
 void RspInfo_ExpParam::MergeFrom(const RspInfo_ExpParam& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DarwinAccelerator.RspInfo.ExpParam)
+// @@protoc_insertion_point(class_specific_merge_from_start:DarwinProto.RspInfo.ExpParam)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -709,7 +709,7 @@ void RspInfo_ExpParam::MergeFrom(const RspInfo_ExpParam& from) {
 }
 
 void RspInfo_ExpParam::CopyFrom(const RspInfo_ExpParam& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DarwinAccelerator.RspInfo.ExpParam)
+// @@protoc_insertion_point(class_specific_copy_from_start:DarwinProto.RspInfo.ExpParam)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -733,7 +733,7 @@ void RspInfo_ExpParam::InternalSwap(RspInfo_ExpParam* other) {
 }
 
 ::std::string RspInfo_ExpParam::GetTypeName() const {
-  return "DarwinAccelerator.RspInfo.ExpParam";
+  return "DarwinProto.RspInfo.ExpParam";
 }
 
 
@@ -753,7 +753,7 @@ RspInfo_ExpLayerInfo::RspInfo_ExpLayerInfo()
     ::protobuf_expinfo_2eproto::InitDefaultsRspInfo_ExpLayerInfo();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(constructor:DarwinProto.RspInfo.ExpLayerInfo)
 }
 RspInfo_ExpLayerInfo::RspInfo_ExpLayerInfo(const RspInfo_ExpLayerInfo& from)
   : ::google::protobuf::MessageLite(),
@@ -765,7 +765,7 @@ RspInfo_ExpLayerInfo::RspInfo_ExpLayerInfo(const RspInfo_ExpLayerInfo& from)
   ::memcpy(&exp_layer_, &from.exp_layer_,
     static_cast<size_t>(reinterpret_cast<char*>(&exp_id_) -
     reinterpret_cast<char*>(&exp_layer_)) + sizeof(exp_id_));
-  // @@protoc_insertion_point(copy_constructor:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(copy_constructor:DarwinProto.RspInfo.ExpLayerInfo)
 }
 
 void RspInfo_ExpLayerInfo::SharedCtor() {
@@ -776,7 +776,7 @@ void RspInfo_ExpLayerInfo::SharedCtor() {
 }
 
 RspInfo_ExpLayerInfo::~RspInfo_ExpLayerInfo() {
-  // @@protoc_insertion_point(destructor:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(destructor:DarwinProto.RspInfo.ExpLayerInfo)
   SharedDtor();
 }
 
@@ -802,7 +802,7 @@ RspInfo_ExpLayerInfo* RspInfo_ExpLayerInfo::New(::google::protobuf::Arena* arena
 }
 
 void RspInfo_ExpLayerInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:DarwinAccelerator.RspInfo.ExpLayerInfo)
+// @@protoc_insertion_point(message_clear_start:DarwinProto.RspInfo.ExpLayerInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -828,7 +828,7 @@ bool RspInfo_ExpLayerInfo::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(parse_start:DarwinProto.RspInfo.ExpLayerInfo)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -862,7 +862,7 @@ bool RspInfo_ExpLayerInfo::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .DarwinAccelerator.RspInfo.ExpParam exp_param = 3;
+      // repeated .DarwinProto.RspInfo.ExpParam exp_param = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
@@ -885,17 +885,17 @@ bool RspInfo_ExpLayerInfo::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(parse_success:DarwinProto.RspInfo.ExpLayerInfo)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(parse_failure:DarwinProto.RspInfo.ExpLayerInfo)
   return false;
 #undef DO_
 }
 
 void RspInfo_ExpLayerInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(serialize_start:DarwinProto.RspInfo.ExpLayerInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -910,7 +910,7 @@ void RspInfo_ExpLayerInfo::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->exp_id(), output);
   }
 
-  // repeated .DarwinAccelerator.RspInfo.ExpParam exp_param = 3;
+  // repeated .DarwinProto.RspInfo.ExpParam exp_param = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->exp_param_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
@@ -919,16 +919,16 @@ void RspInfo_ExpLayerInfo::SerializeWithCachedSizes(
 
   output->WriteRaw(_internal_metadata_.unknown_fields().data(),
                    static_cast<int>(_internal_metadata_.unknown_fields().size()));
-  // @@protoc_insertion_point(serialize_end:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(serialize_end:DarwinProto.RspInfo.ExpLayerInfo)
 }
 
 size_t RspInfo_ExpLayerInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DarwinAccelerator.RspInfo.ExpLayerInfo)
+// @@protoc_insertion_point(message_byte_size_start:DarwinProto.RspInfo.ExpLayerInfo)
   size_t total_size = 0;
 
   total_size += _internal_metadata_.unknown_fields().size();
 
-  // repeated .DarwinAccelerator.RspInfo.ExpParam exp_param = 3;
+  // repeated .DarwinProto.RspInfo.ExpParam exp_param = 3;
   {
     unsigned int count = static_cast<unsigned int>(this->exp_param_size());
     total_size += 1UL * count;
@@ -968,7 +968,7 @@ void RspInfo_ExpLayerInfo::CheckTypeAndMergeFrom(
 }
 
 void RspInfo_ExpLayerInfo::MergeFrom(const RspInfo_ExpLayerInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DarwinAccelerator.RspInfo.ExpLayerInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:DarwinProto.RspInfo.ExpLayerInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -988,7 +988,7 @@ void RspInfo_ExpLayerInfo::MergeFrom(const RspInfo_ExpLayerInfo& from) {
 }
 
 void RspInfo_ExpLayerInfo::CopyFrom(const RspInfo_ExpLayerInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DarwinAccelerator.RspInfo.ExpLayerInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:DarwinProto.RspInfo.ExpLayerInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1013,7 +1013,7 @@ void RspInfo_ExpLayerInfo::InternalSwap(RspInfo_ExpLayerInfo* other) {
 }
 
 ::std::string RspInfo_ExpLayerInfo::GetTypeName() const {
-  return "DarwinAccelerator.RspInfo.ExpLayerInfo";
+  return "DarwinProto.RspInfo.ExpLayerInfo";
 }
 
 
@@ -1031,7 +1031,7 @@ RspInfo::RspInfo()
     ::protobuf_expinfo_2eproto::InitDefaultsRspInfo();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(constructor:DarwinProto.RspInfo)
 }
 RspInfo::RspInfo(const RspInfo& from)
   : ::google::protobuf::MessageLite(),
@@ -1040,7 +1040,7 @@ RspInfo::RspInfo(const RspInfo& from)
       _cached_size_(0),
       exp_info_(from.exp_info_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(copy_constructor:DarwinProto.RspInfo)
 }
 
 void RspInfo::SharedCtor() {
@@ -1048,7 +1048,7 @@ void RspInfo::SharedCtor() {
 }
 
 RspInfo::~RspInfo() {
-  // @@protoc_insertion_point(destructor:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(destructor:DarwinProto.RspInfo)
   SharedDtor();
 }
 
@@ -1074,7 +1074,7 @@ RspInfo* RspInfo::New(::google::protobuf::Arena* arena) const {
 }
 
 void RspInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:DarwinAccelerator.RspInfo)
+// @@protoc_insertion_point(message_clear_start:DarwinProto.RspInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1094,13 +1094,13 @@ bool RspInfo::MergePartialFromCodedStream(
       unknown_fields_setter.buffer());
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_output, false);
-  // @@protoc_insertion_point(parse_start:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(parse_start:DarwinProto.RspInfo)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .DarwinAccelerator.RspInfo.ExpLayerInfo exp_info = 1;
+      // repeated .DarwinProto.RspInfo.ExpLayerInfo exp_info = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
@@ -1123,21 +1123,21 @@ bool RspInfo::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(parse_success:DarwinProto.RspInfo)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(parse_failure:DarwinProto.RspInfo)
   return false;
 #undef DO_
 }
 
 void RspInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(serialize_start:DarwinProto.RspInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .DarwinAccelerator.RspInfo.ExpLayerInfo exp_info = 1;
+  // repeated .DarwinProto.RspInfo.ExpLayerInfo exp_info = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->exp_info_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
@@ -1146,16 +1146,16 @@ void RspInfo::SerializeWithCachedSizes(
 
   output->WriteRaw(_internal_metadata_.unknown_fields().data(),
                    static_cast<int>(_internal_metadata_.unknown_fields().size()));
-  // @@protoc_insertion_point(serialize_end:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(serialize_end:DarwinProto.RspInfo)
 }
 
 size_t RspInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DarwinAccelerator.RspInfo)
+// @@protoc_insertion_point(message_byte_size_start:DarwinProto.RspInfo)
   size_t total_size = 0;
 
   total_size += _internal_metadata_.unknown_fields().size();
 
-  // repeated .DarwinAccelerator.RspInfo.ExpLayerInfo exp_info = 1;
+  // repeated .DarwinProto.RspInfo.ExpLayerInfo exp_info = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->exp_info_size());
     total_size += 1UL * count;
@@ -1179,7 +1179,7 @@ void RspInfo::CheckTypeAndMergeFrom(
 }
 
 void RspInfo::MergeFrom(const RspInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DarwinAccelerator.RspInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:DarwinProto.RspInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1189,7 +1189,7 @@ void RspInfo::MergeFrom(const RspInfo& from) {
 }
 
 void RspInfo::CopyFrom(const RspInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DarwinAccelerator.RspInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:DarwinProto.RspInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1212,11 +1212,11 @@ void RspInfo::InternalSwap(RspInfo* other) {
 }
 
 ::std::string RspInfo::GetTypeName() const {
-  return "DarwinAccelerator.RspInfo";
+  return "DarwinProto.RspInfo";
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace DarwinAccelerator
+}  // namespace DarwinProto
 
 // @@protoc_insertion_point(global_scope)

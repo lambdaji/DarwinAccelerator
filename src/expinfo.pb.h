@@ -55,7 +55,7 @@ inline void InitDefaults() {
   InitDefaultsRspInfo();
 }
 }  // namespace protobuf_expinfo_2eproto
-namespace DarwinAccelerator {
+namespace DarwinProto {
 class ReqInfo;
 class ReqInfoDefaultTypeInternal;
 extern ReqInfoDefaultTypeInternal _ReqInfo_default_instance_;
@@ -68,12 +68,12 @@ extern RspInfo_ExpLayerInfoDefaultTypeInternal _RspInfo_ExpLayerInfo_default_ins
 class RspInfo_ExpParam;
 class RspInfo_ExpParamDefaultTypeInternal;
 extern RspInfo_ExpParamDefaultTypeInternal _RspInfo_ExpParam_default_instance_;
-}  // namespace DarwinAccelerator
-namespace DarwinAccelerator {
+}  // namespace DarwinProto
+namespace DarwinProto {
 
 // ===================================================================
 
-class ReqInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:DarwinAccelerator.ReqInfo) */ {
+class ReqInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:DarwinProto.ReqInfo) */ {
  public:
   ReqInfo();
   virtual ~ReqInfo();
@@ -203,7 +203,7 @@ class ReqInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
   ::google::protobuf::uint32 shuffle() const;
   void set_shuffle(::google::protobuf::uint32 value);
 
-  // @@protoc_insertion_point(class_scope:DarwinAccelerator.ReqInfo)
+  // @@protoc_insertion_point(class_scope:DarwinProto.ReqInfo)
  private:
   void set_has_pos_id();
   void clear_has_pos_id();
@@ -229,7 +229,7 @@ class ReqInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
 };
 // -------------------------------------------------------------------
 
-class RspInfo_ExpParam : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:DarwinAccelerator.RspInfo.ExpParam) */ {
+class RspInfo_ExpParam : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:DarwinProto.RspInfo.ExpParam) */ {
  public:
   RspInfo_ExpParam();
   virtual ~RspInfo_ExpParam();
@@ -346,7 +346,7 @@ class RspInfo_ExpParam : public ::google::protobuf::MessageLite /* @@protoc_inse
   ::std::string* release_sval();
   void set_allocated_sval(::std::string* sval);
 
-  // @@protoc_insertion_point(class_scope:DarwinAccelerator.RspInfo.ExpParam)
+  // @@protoc_insertion_point(class_scope:DarwinProto.RspInfo.ExpParam)
  private:
   void set_has_skey();
   void clear_has_skey();
@@ -363,7 +363,7 @@ class RspInfo_ExpParam : public ::google::protobuf::MessageLite /* @@protoc_inse
 };
 // -------------------------------------------------------------------
 
-class RspInfo_ExpLayerInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:DarwinAccelerator.RspInfo.ExpLayerInfo) */ {
+class RspInfo_ExpLayerInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:DarwinProto.RspInfo.ExpLayerInfo) */ {
  public:
   RspInfo_ExpLayerInfo();
   virtual ~RspInfo_ExpLayerInfo();
@@ -450,16 +450,16 @@ class RspInfo_ExpLayerInfo : public ::google::protobuf::MessageLite /* @@protoc_
 
   // accessors -------------------------------------------------------
 
-  // repeated .DarwinAccelerator.RspInfo.ExpParam exp_param = 3;
+  // repeated .DarwinProto.RspInfo.ExpParam exp_param = 3;
   int exp_param_size() const;
   void clear_exp_param();
   static const int kExpParamFieldNumber = 3;
-  const ::DarwinAccelerator::RspInfo_ExpParam& exp_param(int index) const;
-  ::DarwinAccelerator::RspInfo_ExpParam* mutable_exp_param(int index);
-  ::DarwinAccelerator::RspInfo_ExpParam* add_exp_param();
-  ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpParam >*
+  const ::DarwinProto::RspInfo_ExpParam& exp_param(int index) const;
+  ::DarwinProto::RspInfo_ExpParam* mutable_exp_param(int index);
+  ::DarwinProto::RspInfo_ExpParam* add_exp_param();
+  ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpParam >*
       mutable_exp_param();
-  const ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpParam >&
+  const ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpParam >&
       exp_param() const;
 
   // optional uint32 exp_layer = 1;
@@ -476,7 +476,7 @@ class RspInfo_ExpLayerInfo : public ::google::protobuf::MessageLite /* @@protoc_
   ::google::protobuf::uint32 exp_id() const;
   void set_exp_id(::google::protobuf::uint32 value);
 
-  // @@protoc_insertion_point(class_scope:DarwinAccelerator.RspInfo.ExpLayerInfo)
+  // @@protoc_insertion_point(class_scope:DarwinProto.RspInfo.ExpLayerInfo)
  private:
   void set_has_exp_layer();
   void clear_has_exp_layer();
@@ -486,7 +486,7 @@ class RspInfo_ExpLayerInfo : public ::google::protobuf::MessageLite /* @@protoc_
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpParam > exp_param_;
+  ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpParam > exp_param_;
   ::google::protobuf::uint32 exp_layer_;
   ::google::protobuf::uint32 exp_id_;
   friend struct ::protobuf_expinfo_2eproto::TableStruct;
@@ -494,7 +494,7 @@ class RspInfo_ExpLayerInfo : public ::google::protobuf::MessageLite /* @@protoc_
 };
 // -------------------------------------------------------------------
 
-class RspInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:DarwinAccelerator.RspInfo) */ {
+class RspInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:DarwinProto.RspInfo) */ {
  public:
   RspInfo();
   virtual ~RspInfo();
@@ -584,25 +584,25 @@ class RspInfo : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
 
   // accessors -------------------------------------------------------
 
-  // repeated .DarwinAccelerator.RspInfo.ExpLayerInfo exp_info = 1;
+  // repeated .DarwinProto.RspInfo.ExpLayerInfo exp_info = 1;
   int exp_info_size() const;
   void clear_exp_info();
   static const int kExpInfoFieldNumber = 1;
-  const ::DarwinAccelerator::RspInfo_ExpLayerInfo& exp_info(int index) const;
-  ::DarwinAccelerator::RspInfo_ExpLayerInfo* mutable_exp_info(int index);
-  ::DarwinAccelerator::RspInfo_ExpLayerInfo* add_exp_info();
-  ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpLayerInfo >*
+  const ::DarwinProto::RspInfo_ExpLayerInfo& exp_info(int index) const;
+  ::DarwinProto::RspInfo_ExpLayerInfo* mutable_exp_info(int index);
+  ::DarwinProto::RspInfo_ExpLayerInfo* add_exp_info();
+  ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpLayerInfo >*
       mutable_exp_info();
-  const ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpLayerInfo >&
+  const ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpLayerInfo >&
       exp_info() const;
 
-  // @@protoc_insertion_point(class_scope:DarwinAccelerator.RspInfo)
+  // @@protoc_insertion_point(class_scope:DarwinProto.RspInfo)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpLayerInfo > exp_info_;
+  ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpLayerInfo > exp_info_;
   friend struct ::protobuf_expinfo_2eproto::TableStruct;
   friend void ::protobuf_expinfo_2eproto::InitDefaultsRspInfoImpl();
 };
@@ -632,13 +632,13 @@ inline void ReqInfo::clear_pos_id() {
   clear_has_pos_id();
 }
 inline ::google::protobuf::uint32 ReqInfo::pos_id() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.ReqInfo.pos_id)
+  // @@protoc_insertion_point(field_get:DarwinProto.ReqInfo.pos_id)
   return pos_id_;
 }
 inline void ReqInfo::set_pos_id(::google::protobuf::uint32 value) {
   set_has_pos_id();
   pos_id_ = value;
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.ReqInfo.pos_id)
+  // @@protoc_insertion_point(field_set:DarwinProto.ReqInfo.pos_id)
 }
 
 // optional bytes sguid = 2;
@@ -656,41 +656,41 @@ inline void ReqInfo::clear_sguid() {
   clear_has_sguid();
 }
 inline const ::std::string& ReqInfo::sguid() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.ReqInfo.sguid)
+  // @@protoc_insertion_point(field_get:DarwinProto.ReqInfo.sguid)
   return sguid_.GetNoArena();
 }
 inline void ReqInfo::set_sguid(const ::std::string& value) {
   set_has_sguid();
   sguid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.ReqInfo.sguid)
+  // @@protoc_insertion_point(field_set:DarwinProto.ReqInfo.sguid)
 }
 #if LANG_CXX11
 inline void ReqInfo::set_sguid(::std::string&& value) {
   set_has_sguid();
   sguid_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:DarwinAccelerator.ReqInfo.sguid)
+  // @@protoc_insertion_point(field_set_rvalue:DarwinProto.ReqInfo.sguid)
 }
 #endif
 inline void ReqInfo::set_sguid(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_sguid();
   sguid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:DarwinAccelerator.ReqInfo.sguid)
+  // @@protoc_insertion_point(field_set_char:DarwinProto.ReqInfo.sguid)
 }
 inline void ReqInfo::set_sguid(const void* value, size_t size) {
   set_has_sguid();
   sguid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:DarwinAccelerator.ReqInfo.sguid)
+  // @@protoc_insertion_point(field_set_pointer:DarwinProto.ReqInfo.sguid)
 }
 inline ::std::string* ReqInfo::mutable_sguid() {
   set_has_sguid();
-  // @@protoc_insertion_point(field_mutable:DarwinAccelerator.ReqInfo.sguid)
+  // @@protoc_insertion_point(field_mutable:DarwinProto.ReqInfo.sguid)
   return sguid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* ReqInfo::release_sguid() {
-  // @@protoc_insertion_point(field_release:DarwinAccelerator.ReqInfo.sguid)
+  // @@protoc_insertion_point(field_release:DarwinProto.ReqInfo.sguid)
   clear_has_sguid();
   return sguid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -701,7 +701,7 @@ inline void ReqInfo::set_allocated_sguid(::std::string* sguid) {
     clear_has_sguid();
   }
   sguid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), sguid);
-  // @@protoc_insertion_point(field_set_allocated:DarwinAccelerator.ReqInfo.sguid)
+  // @@protoc_insertion_point(field_set_allocated:DarwinProto.ReqInfo.sguid)
 }
 
 // optional uint32 layers = 3;
@@ -719,13 +719,13 @@ inline void ReqInfo::clear_layers() {
   clear_has_layers();
 }
 inline ::google::protobuf::uint32 ReqInfo::layers() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.ReqInfo.layers)
+  // @@protoc_insertion_point(field_get:DarwinProto.ReqInfo.layers)
   return layers_;
 }
 inline void ReqInfo::set_layers(::google::protobuf::uint32 value) {
   set_has_layers();
   layers_ = value;
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.ReqInfo.layers)
+  // @@protoc_insertion_point(field_set:DarwinProto.ReqInfo.layers)
 }
 
 // optional uint32 orth = 4 [default = 1];
@@ -743,13 +743,13 @@ inline void ReqInfo::clear_orth() {
   clear_has_orth();
 }
 inline ::google::protobuf::uint32 ReqInfo::orth() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.ReqInfo.orth)
+  // @@protoc_insertion_point(field_get:DarwinProto.ReqInfo.orth)
   return orth_;
 }
 inline void ReqInfo::set_orth(::google::protobuf::uint32 value) {
   set_has_orth();
   orth_ = value;
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.ReqInfo.orth)
+  // @@protoc_insertion_point(field_set:DarwinProto.ReqInfo.orth)
 }
 
 // optional uint32 shuffle = 5 [default = 1];
@@ -767,13 +767,13 @@ inline void ReqInfo::clear_shuffle() {
   clear_has_shuffle();
 }
 inline ::google::protobuf::uint32 ReqInfo::shuffle() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.ReqInfo.shuffle)
+  // @@protoc_insertion_point(field_get:DarwinProto.ReqInfo.shuffle)
   return shuffle_;
 }
 inline void ReqInfo::set_shuffle(::google::protobuf::uint32 value) {
   set_has_shuffle();
   shuffle_ = value;
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.ReqInfo.shuffle)
+  // @@protoc_insertion_point(field_set:DarwinProto.ReqInfo.shuffle)
 }
 
 // -------------------------------------------------------------------
@@ -795,41 +795,41 @@ inline void RspInfo_ExpParam::clear_skey() {
   clear_has_skey();
 }
 inline const ::std::string& RspInfo_ExpParam::skey() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.RspInfo.ExpParam.skey)
+  // @@protoc_insertion_point(field_get:DarwinProto.RspInfo.ExpParam.skey)
   return skey_.GetNoArena();
 }
 inline void RspInfo_ExpParam::set_skey(const ::std::string& value) {
   set_has_skey();
   skey_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.RspInfo.ExpParam.skey)
+  // @@protoc_insertion_point(field_set:DarwinProto.RspInfo.ExpParam.skey)
 }
 #if LANG_CXX11
 inline void RspInfo_ExpParam::set_skey(::std::string&& value) {
   set_has_skey();
   skey_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:DarwinAccelerator.RspInfo.ExpParam.skey)
+  // @@protoc_insertion_point(field_set_rvalue:DarwinProto.RspInfo.ExpParam.skey)
 }
 #endif
 inline void RspInfo_ExpParam::set_skey(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_skey();
   skey_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:DarwinAccelerator.RspInfo.ExpParam.skey)
+  // @@protoc_insertion_point(field_set_char:DarwinProto.RspInfo.ExpParam.skey)
 }
 inline void RspInfo_ExpParam::set_skey(const void* value, size_t size) {
   set_has_skey();
   skey_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:DarwinAccelerator.RspInfo.ExpParam.skey)
+  // @@protoc_insertion_point(field_set_pointer:DarwinProto.RspInfo.ExpParam.skey)
 }
 inline ::std::string* RspInfo_ExpParam::mutable_skey() {
   set_has_skey();
-  // @@protoc_insertion_point(field_mutable:DarwinAccelerator.RspInfo.ExpParam.skey)
+  // @@protoc_insertion_point(field_mutable:DarwinProto.RspInfo.ExpParam.skey)
   return skey_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* RspInfo_ExpParam::release_skey() {
-  // @@protoc_insertion_point(field_release:DarwinAccelerator.RspInfo.ExpParam.skey)
+  // @@protoc_insertion_point(field_release:DarwinProto.RspInfo.ExpParam.skey)
   clear_has_skey();
   return skey_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -840,7 +840,7 @@ inline void RspInfo_ExpParam::set_allocated_skey(::std::string* skey) {
     clear_has_skey();
   }
   skey_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), skey);
-  // @@protoc_insertion_point(field_set_allocated:DarwinAccelerator.RspInfo.ExpParam.skey)
+  // @@protoc_insertion_point(field_set_allocated:DarwinProto.RspInfo.ExpParam.skey)
 }
 
 // optional bytes sval = 2;
@@ -858,41 +858,41 @@ inline void RspInfo_ExpParam::clear_sval() {
   clear_has_sval();
 }
 inline const ::std::string& RspInfo_ExpParam::sval() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.RspInfo.ExpParam.sval)
+  // @@protoc_insertion_point(field_get:DarwinProto.RspInfo.ExpParam.sval)
   return sval_.GetNoArena();
 }
 inline void RspInfo_ExpParam::set_sval(const ::std::string& value) {
   set_has_sval();
   sval_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.RspInfo.ExpParam.sval)
+  // @@protoc_insertion_point(field_set:DarwinProto.RspInfo.ExpParam.sval)
 }
 #if LANG_CXX11
 inline void RspInfo_ExpParam::set_sval(::std::string&& value) {
   set_has_sval();
   sval_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:DarwinAccelerator.RspInfo.ExpParam.sval)
+  // @@protoc_insertion_point(field_set_rvalue:DarwinProto.RspInfo.ExpParam.sval)
 }
 #endif
 inline void RspInfo_ExpParam::set_sval(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_sval();
   sval_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:DarwinAccelerator.RspInfo.ExpParam.sval)
+  // @@protoc_insertion_point(field_set_char:DarwinProto.RspInfo.ExpParam.sval)
 }
 inline void RspInfo_ExpParam::set_sval(const void* value, size_t size) {
   set_has_sval();
   sval_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:DarwinAccelerator.RspInfo.ExpParam.sval)
+  // @@protoc_insertion_point(field_set_pointer:DarwinProto.RspInfo.ExpParam.sval)
 }
 inline ::std::string* RspInfo_ExpParam::mutable_sval() {
   set_has_sval();
-  // @@protoc_insertion_point(field_mutable:DarwinAccelerator.RspInfo.ExpParam.sval)
+  // @@protoc_insertion_point(field_mutable:DarwinProto.RspInfo.ExpParam.sval)
   return sval_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* RspInfo_ExpParam::release_sval() {
-  // @@protoc_insertion_point(field_release:DarwinAccelerator.RspInfo.ExpParam.sval)
+  // @@protoc_insertion_point(field_release:DarwinProto.RspInfo.ExpParam.sval)
   clear_has_sval();
   return sval_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -903,7 +903,7 @@ inline void RspInfo_ExpParam::set_allocated_sval(::std::string* sval) {
     clear_has_sval();
   }
   sval_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), sval);
-  // @@protoc_insertion_point(field_set_allocated:DarwinAccelerator.RspInfo.ExpParam.sval)
+  // @@protoc_insertion_point(field_set_allocated:DarwinProto.RspInfo.ExpParam.sval)
 }
 
 // -------------------------------------------------------------------
@@ -925,13 +925,13 @@ inline void RspInfo_ExpLayerInfo::clear_exp_layer() {
   clear_has_exp_layer();
 }
 inline ::google::protobuf::uint32 RspInfo_ExpLayerInfo::exp_layer() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_layer)
+  // @@protoc_insertion_point(field_get:DarwinProto.RspInfo.ExpLayerInfo.exp_layer)
   return exp_layer_;
 }
 inline void RspInfo_ExpLayerInfo::set_exp_layer(::google::protobuf::uint32 value) {
   set_has_exp_layer();
   exp_layer_ = value;
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_layer)
+  // @@protoc_insertion_point(field_set:DarwinProto.RspInfo.ExpLayerInfo.exp_layer)
 }
 
 // optional uint32 exp_id = 2 [default = 0];
@@ -949,42 +949,42 @@ inline void RspInfo_ExpLayerInfo::clear_exp_id() {
   clear_has_exp_id();
 }
 inline ::google::protobuf::uint32 RspInfo_ExpLayerInfo::exp_id() const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_id)
+  // @@protoc_insertion_point(field_get:DarwinProto.RspInfo.ExpLayerInfo.exp_id)
   return exp_id_;
 }
 inline void RspInfo_ExpLayerInfo::set_exp_id(::google::protobuf::uint32 value) {
   set_has_exp_id();
   exp_id_ = value;
-  // @@protoc_insertion_point(field_set:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_id)
+  // @@protoc_insertion_point(field_set:DarwinProto.RspInfo.ExpLayerInfo.exp_id)
 }
 
-// repeated .DarwinAccelerator.RspInfo.ExpParam exp_param = 3;
+// repeated .DarwinProto.RspInfo.ExpParam exp_param = 3;
 inline int RspInfo_ExpLayerInfo::exp_param_size() const {
   return exp_param_.size();
 }
 inline void RspInfo_ExpLayerInfo::clear_exp_param() {
   exp_param_.Clear();
 }
-inline const ::DarwinAccelerator::RspInfo_ExpParam& RspInfo_ExpLayerInfo::exp_param(int index) const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_param)
+inline const ::DarwinProto::RspInfo_ExpParam& RspInfo_ExpLayerInfo::exp_param(int index) const {
+  // @@protoc_insertion_point(field_get:DarwinProto.RspInfo.ExpLayerInfo.exp_param)
   return exp_param_.Get(index);
 }
-inline ::DarwinAccelerator::RspInfo_ExpParam* RspInfo_ExpLayerInfo::mutable_exp_param(int index) {
-  // @@protoc_insertion_point(field_mutable:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_param)
+inline ::DarwinProto::RspInfo_ExpParam* RspInfo_ExpLayerInfo::mutable_exp_param(int index) {
+  // @@protoc_insertion_point(field_mutable:DarwinProto.RspInfo.ExpLayerInfo.exp_param)
   return exp_param_.Mutable(index);
 }
-inline ::DarwinAccelerator::RspInfo_ExpParam* RspInfo_ExpLayerInfo::add_exp_param() {
-  // @@protoc_insertion_point(field_add:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_param)
+inline ::DarwinProto::RspInfo_ExpParam* RspInfo_ExpLayerInfo::add_exp_param() {
+  // @@protoc_insertion_point(field_add:DarwinProto.RspInfo.ExpLayerInfo.exp_param)
   return exp_param_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpParam >*
+inline ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpParam >*
 RspInfo_ExpLayerInfo::mutable_exp_param() {
-  // @@protoc_insertion_point(field_mutable_list:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_param)
+  // @@protoc_insertion_point(field_mutable_list:DarwinProto.RspInfo.ExpLayerInfo.exp_param)
   return &exp_param_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpParam >&
+inline const ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpParam >&
 RspInfo_ExpLayerInfo::exp_param() const {
-  // @@protoc_insertion_point(field_list:DarwinAccelerator.RspInfo.ExpLayerInfo.exp_param)
+  // @@protoc_insertion_point(field_list:DarwinProto.RspInfo.ExpLayerInfo.exp_param)
   return exp_param_;
 }
 
@@ -992,33 +992,33 @@ RspInfo_ExpLayerInfo::exp_param() const {
 
 // RspInfo
 
-// repeated .DarwinAccelerator.RspInfo.ExpLayerInfo exp_info = 1;
+// repeated .DarwinProto.RspInfo.ExpLayerInfo exp_info = 1;
 inline int RspInfo::exp_info_size() const {
   return exp_info_.size();
 }
 inline void RspInfo::clear_exp_info() {
   exp_info_.Clear();
 }
-inline const ::DarwinAccelerator::RspInfo_ExpLayerInfo& RspInfo::exp_info(int index) const {
-  // @@protoc_insertion_point(field_get:DarwinAccelerator.RspInfo.exp_info)
+inline const ::DarwinProto::RspInfo_ExpLayerInfo& RspInfo::exp_info(int index) const {
+  // @@protoc_insertion_point(field_get:DarwinProto.RspInfo.exp_info)
   return exp_info_.Get(index);
 }
-inline ::DarwinAccelerator::RspInfo_ExpLayerInfo* RspInfo::mutable_exp_info(int index) {
-  // @@protoc_insertion_point(field_mutable:DarwinAccelerator.RspInfo.exp_info)
+inline ::DarwinProto::RspInfo_ExpLayerInfo* RspInfo::mutable_exp_info(int index) {
+  // @@protoc_insertion_point(field_mutable:DarwinProto.RspInfo.exp_info)
   return exp_info_.Mutable(index);
 }
-inline ::DarwinAccelerator::RspInfo_ExpLayerInfo* RspInfo::add_exp_info() {
-  // @@protoc_insertion_point(field_add:DarwinAccelerator.RspInfo.exp_info)
+inline ::DarwinProto::RspInfo_ExpLayerInfo* RspInfo::add_exp_info() {
+  // @@protoc_insertion_point(field_add:DarwinProto.RspInfo.exp_info)
   return exp_info_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpLayerInfo >*
+inline ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpLayerInfo >*
 RspInfo::mutable_exp_info() {
-  // @@protoc_insertion_point(field_mutable_list:DarwinAccelerator.RspInfo.exp_info)
+  // @@protoc_insertion_point(field_mutable_list:DarwinProto.RspInfo.exp_info)
   return &exp_info_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::DarwinAccelerator::RspInfo_ExpLayerInfo >&
+inline const ::google::protobuf::RepeatedPtrField< ::DarwinProto::RspInfo_ExpLayerInfo >&
 RspInfo::exp_info() const {
-  // @@protoc_insertion_point(field_list:DarwinAccelerator.RspInfo.exp_info)
+  // @@protoc_insertion_point(field_list:DarwinProto.RspInfo.exp_info)
   return exp_info_;
 }
 
@@ -1034,7 +1034,7 @@ RspInfo::exp_info() const {
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace DarwinAccelerator
+}  // namespace DarwinProto
 
 // @@protoc_insertion_point(global_scope)
 

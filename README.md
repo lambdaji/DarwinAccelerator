@@ -5,4 +5,5 @@
 
 几个特性：
  - protobuf
- - MurmurHash/CityHash
+ - MurmurHash/CityHash/MD5
+ - gflags
