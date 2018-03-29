@@ -13,17 +13,11 @@ using namespace DarwinProto;
 
 
 #define MURMUR_SEED 0x3c074a61
-#define BINS 1000
+#define BINS 10
 
-class DarwinAccelerator
-{
-public:
-	DarwinAccelerator();
-	~DarwinAccelerator();
-	void doMD5Hash(const ReqInfo & req_info, RspInfo& rsp_info);
-	void doMurmurHash(const ReqInfo & req_info, RspInfo& rsp_info);
-	void doCityHash(const ReqInfo & req_info, RspInfo& rsp_info);
-};
+void doMD5Hash(const ReqInfo & req_info, RspInfo& rsp_info);
+void doMurmurHash(const ReqInfo & req_info, RspInfo& rsp_info);
+void doCityHash(const ReqInfo & req_info, RspInfo& rsp_info);
 
 static int32_t hex_table[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 		0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,

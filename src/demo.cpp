@@ -1,7 +1,7 @@
 /*
  * demo.cpp
  *
- *  Created on: 2017年10月30日
+ *  Created on: 2017锟斤拷10锟斤拷30锟斤拷
  *      Author: lambdaji
  */
 
@@ -15,33 +15,33 @@
 using namespace std;
 using namespace boost;
 
-DEFINE_string(log_dir, "/dockerdata/lambdaji/ml_packages/DarwinAccelerator/log/","log_dir");
-DEFINE_string(hash_type, "MurmurHash CityHash MD5","hash type valid:{MurmurHash,CityHash,MD5}");
-DEFINE_int32(shuffle, 1,"is shuffle");
-DEFINE_int32(layers, 3,"how many layers");
+DEFINE_string(sLogDir, "/dockerdata/lambdaji/ml_packages/DarwinAccelerator/log/", "log_dir");
+DEFINE_string(sHashType, "MurmurHash", "hash type valid:{MurmurHash, CityHash, MD5}");
+DEFINE_int32(iShuffle, 1, "is shuffle");
+DEFINE_int32(iLayers, 3, "how many layers");
 
 int main(int argc, char **argv) {
   google::ParseCommandLineFlags(&argc, &argv, true);
 
   // Initialize Google's logging library.
   google::InitGoogleLogging(argv[0]);
-  FLAGS_colorlogtostderr = true; //输出彩色日志到stderr
+  FLAGS_colorlogtostderr = true;
 
-  cout << "log_dir: " << FLAGS_log_dir << endl;
-  cout << "hash type: " << FLAGS_hash_type << endl;
-  cout << "shuffle: " << FLAGS_shuffle << endl;
-  cout << "layers: " << FLAGS_layers << endl;
+  cout << "log_dir: " << FLAGS_sLogDir << endl;
+  cout << "hash type: " << FLAGS_sHashType << endl;
+  cout << "shuffle: " << FLAGS_iShuffle << endl;
+  cout << "layers: " << FLAGS_iLayers << endl;
 
-  DarwinAccelerator da;
+  //DarwinAccelerator da;
   char buf[1024];
-  string in_f = FLAGS_log_dir+"guid.txt";
+  string in_f = FLAGS_sLogDir+"guid.txt";
   ifstream ifs(in_f.c_str());
-  string ou_f = FLAGS_log_dir+FLAGS_hash_type+"_stat.txt";
+  string ou_f = FLAGS_sLogDir+FLAGS_sHashType+"_stat.txt";
   ofstream ofs(ou_f.c_str(),ios::app);
 
   ReqInfo req_info;
-  req_info.set_layers(FLAGS_layers);
-  req_info.set_shuffle(FLAGS_shuffle);
+  req_info.set_layers(FLAGS_iLayers);
+  req_info.set_shuffle(FLAGS_iShuffle);
   RspInfo rsp_info;
 
   boost::unordered_map<string,uint32_t> stat_map;
@@ -50,12 +50,12 @@ int main(int argc, char **argv) {
   {
 	  rsp_info.Clear();
 	  req_info.set_sguid(buf);
-	  if (FLAGS_hash_type == "MurmurHash") {
-		  da.doMurmurHash(req_info,rsp_info);
-	  } else if(FLAGS_hash_type == "CityHash") {
-		  da.doCityHash(req_info,rsp_info);
+	  if (FLAGS_sHashType == "MurmurHash") {
+		  doMurmurHash(req_info,rsp_info);
+	  } else if(FLAGS_sHashType == "CityHash") {
+		  doCityHash(req_info,rsp_info);
 	  } else {
-		  da.doMD5Hash(req_info,rsp_info);
+		  doMD5Hash(req_info,rsp_info);
 	  }
 
 	  stringstream ss;
